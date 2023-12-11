@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Inter:wght@300&family=Poppins&family=Roboto&display=swap');
+
+
+*{
+    font-family: poppins ;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    height: 80px;
+    background-color:  #222;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-size: 18px;
+}
+
+nav>a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+#main-container{
+    height: fit-content;
+    background-color: rgba(22, 21, 19, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+#home{
+    /* background-color:darkcyan; */
+    padding-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+    /* justify-content: center; */
+    /* background-color: aqua; */
+
+}
+
+#home>img{
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    object-position: 0px 0px;
+    border-radius: 50%;
+    /* border: 4px solid purple; */
+    transition: 0.2s linear;
+}
+
+
+#title{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+#development{
+    background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#about-me{
+    color: #C5C5C5;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+
+#first-line,#third-line{
+    display: block;
+    text-align: center;
+}
+
+#button-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+#button-container>a{
+    padding: 10px;
+    padding-inline: 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#button-container>a:nth-child(1){
+    background-color: white;
+    color: black;
+}
+
+#button-container>a:nth-child(2){
+    background:transparent;
+    color: white;
+    border: 1px solid white;
+    
+}
+
+
+#skills{
+    width: 50%;
+    padding-top: 80px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* background-color: rebeccapurple; */
+    align-items: center;
+    color: #C5C5C5;
+    padding-bottom: 100px;
+}
+
+#skills>p{
+    font-size: 40px;
+}
+
+#skills-images{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#skills-images>img{
+    width: 40px;
+    height: 40px;
+}
+#skills-images>img:nth-child(4){
+    animation: react 10s linear infinite;
+}
+
+@keyframes react {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#projects{
+    width: 50%;
+    /* background-color: #9A33FF; */
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+#projects>p{ 
+    font-size: 40px;
+    font-weight: 700;
+    background: var(--Orange-Gradient, linear-gradient(180deg, #FF8660 0%, #D5491D 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#project-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s linear;
+}
+
+.project-card>a:nth-child(1)>img{
+    width: 350px;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px ;
+    object-fit: cover;
+}
+
+
+.project-card>a:nth-child(2){
+    /* height: 20px; */
+    background-color: #2A2A2A;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.project-card>a:nth-child(2)>p:nth-child(1){
+    color: hsla(0, 0%, 77%, 1);
+    font-size: 14px;
+}
+
+#project-name{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.project-card>a:nth-child(2)>img{
+   position: absolute; 
+   right: 15px;
+   bottom: 30px;
+   
+}
+
+.project-card>a:nth-child(2){
+    margin-top: -6px;
+}
+
+#contacts{
+    /* background-color: #C5C5C5; */
+    /* margin-top: 200px; */
+    background-color: hsla(0, 0%, 10%, 1);
+    /* width: 50%; */
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:100px;
+}
+
+#contacts>div{
+    width: 50%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mobile{
+    display: none;
+}
+
+#contacts>div>p:nth-child(1){
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#contacts>div>p:nth-child(2){
+    color: #C5C5C5;
+    font-size: 14px;
+}
+
+
+
+#contacts>div>a{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color: white;
+}
+
+#socials{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+#socials>a>img{
+    width: 18px;
+    cursor: pointer;
+}
+
+
+#socials>a:nth-child(3)>img{
+    width: 22px;
+}
+
+@media screen and (max-width:400px) {
+    #main-container{
+        width: 100vw;
+    }
+
+    nav{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+
+    #home{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    #skills{
+        padding-bottom: 50px;
+    }
+
+    #button-container{
+        flex-direction: column;
+    }
+
+    .mobile{
+        display: block;
+        /* background-color: darkblue; */
+        /* width: 100%; */
+        width: 80%;
+        color: #C5C5C5;
+    }
+
+    #skills-images{
+        flex-wrap: wrap;
+    }
+
+    #projects{
+        padding-bottom: 50px;
+    }
+
+    #contacts>div{
+        padding-top: 50px;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    
+}
