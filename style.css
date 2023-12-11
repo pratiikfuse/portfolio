@@ -298,7 +298,7 @@ nav>a{
     width: 22px;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     #main-container{
         width: 100vw;
     }
