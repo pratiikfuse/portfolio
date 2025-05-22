@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./faivon.png" type="image/x-icon" />
   </head>
-  <body>
+  <body style="background-color: rgba(22, 21, 19, 1);">
     <nav>
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
@@ -15,7 +15,7 @@
       <a href="#contacts">Contact</a>
     </nav>
     <div id="main-container">
-      <section id="home">
+      <section class="fade-in" id="home">
         <img src="./images/profile.jpg" alt="" />
         <p id="title">
           I do Frontend<br /><span id="development">Development</span>
@@ -48,7 +48,7 @@
           >
         </div>
       </section>
-      <section id="skills">
+      <section class="fade-in" id="skills">
         <p>Skills</p>
         <div id="skills-images">
           <img src="./images/skills/html.png" alt="HTML5" />
@@ -57,10 +57,10 @@
           <img src="./images/skills/reactjs.png" alt="React JS" />
         </div>
       </section>
-      <section id="projects">
+      <section  id="projects">
         <p>Projects</p>
         <div id="project-container">
-          <div class="project-card">
+          <div class="project-card fade-in">
             <a
               href="https://pratiikfuse.github.io/Interactive-food-delivery/"
               target="_blank"
@@ -75,7 +75,7 @@
               <img src="./images/project/direct.png" alt="redirect" />
             </a>
           </div>
-          <div class="project-card">
+          <div class="project-card fade-in">
             <a
               href="https://pratiikfuse.github.io/Airbnb_complete_clone/"
               target="_blank"
@@ -90,7 +90,7 @@
               <img src="./images/project/direct.png" alt="redirect" />
             </a>
           </div>
-          <div class="project-card">
+          <div class="project-card fade-in">
             <a
               href="https://pratiikfuse.github.io/Post_Offfice_Tracker/"
               target="_blank"
@@ -102,7 +102,7 @@
               <img src="./images/project/direct.png" alt="redirect" />
             </a>
           </div>
-          <div class="project-card">
+          <div class="project-card fade-in">
             <a href="https://pratiikfuse.github.io/Timer/" target="_blank"
               ><img src="./images/project/timer.jpg" alt="timer"
             /></a>
@@ -117,21 +117,21 @@
     </div>
     <footer id="contacts">
       <div>
-        <p>Contact</p>
-        <p>
+        <p class="fade-in">Contact</p>
+        <p class="fade-in">
           To contribute significantly in highly challenging projects as well as
           work with an inspiring team and grow in a reputed organization, where
           I can utilize as well as develop my technical skills by getting a good
           exposure and knowledge, which can be utilized for growth of
           organization.
         </p>
-        <a href="mailto:pratikfuse20@gmail.com"
+        <a class="fade-in" href="mailto:pratikfuse20@gmail.com"
           ><img
             src="./images/contact/Email.svg"
             alt="email logo"
           />pratikfuse20@gmail.com</a
         >
-        <div id="socials">
+        <div id="socials" class="fade-in"> 
           <a href="https://www.instagram.com/pratik_fuse_45/" target="_blank">
             <img src="./images/contact/instagram.svg" alt="instagram"
           /></a>
@@ -142,5 +142,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal('.fade-in',{duration:1000,origin:'bottom',distanc:'0px'});
+    </script>
   </body>
 </html>
