@@ -84,12 +84,20 @@ nav>a{
     color: #C5C5C5;
     font-weight: lighter;
     font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 600px;
 }
 
 
-#first-line,#third-line{
+#first-line,#second-line,#third-line{
     display: block;
     text-align: center;
+    line-height: 1.6;
+}
+
+#second-line{
+    margin: 5px 0;
 }
 
 #button-container{
@@ -159,6 +167,190 @@ nav>a{
     }
 }
 
+#experience{
+    width: 50%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #C5C5C5;
+    padding-bottom: 100px;
+}
+
+#experience>p{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.experience-static{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-card{
+    background: linear-gradient(135deg, rgba(255, 134, 96, 0.1) 0%, rgba(154, 51, 255, 0.1) 100%);
+    border: 1px solid rgba(255, 134, 96, 0.3);
+    border-radius: 20px;
+    padding: 40px 60px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.company-name{
+    color: #FF8660;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.experience-details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.experience-details p{
+    color: #C5C5C5;
+    font-size: 18px;
+}
+
+.detail-label{
+    color: #9A33FF;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.technologies-section{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.technologies-section .detail-label{
+    color: #9A33FF;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+.technologies-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.tech-badge{
+    background: linear-gradient(135deg, rgba(255, 134, 96, 0.15) 0%, rgba(154, 51, 255, 0.15) 100%);
+    border: 1px solid rgba(255, 134, 96, 0.4);
+    border-radius: 20px;
+    padding: 8px 18px;
+    color: #C5C5C5;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tech-badge:hover{
+    background: linear-gradient(135deg, rgba(255, 134, 96, 0.25) 0%, rgba(154, 51, 255, 0.25) 100%);
+    border-color: rgba(255, 134, 96, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 134, 96, 0.2);
+    color: #C5C5C5;
+}
+
+.experience-letter-link{
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #C5C5C5;
+    text-decoration: underline;
+    margin-top: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.experience-letter-link:hover{
+    opacity: 1;
+    color: #FF8660;
+}
+
+#achievements{
+    width: 50%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #C5C5C5;
+    padding-bottom: 100px;
+}
+
+#achievements>p{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.achievements-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.achievement-item{
+    width: 100%;
+    max-width: 600px;
+}
+
+.achievement-link{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.achievement-content{
+    background: linear-gradient(135deg, rgba(255, 134, 96, 0.1) 0%, rgba(154, 51, 255, 0.1) 100%);
+    border: 1px solid rgba(255, 134, 96, 0.3);
+    border-radius: 15px;
+    padding: 25px 30px;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.achievement-content:hover{
+    background: linear-gradient(135deg, rgba(255, 134, 96, 0.2) 0%, rgba(154, 51, 255, 0.2) 100%);
+    border-color: rgba(255, 134, 96, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 134, 96, 0.2);
+}
+
+.achievement-content h3{
+    color: #FF8660;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.achievement-description{
+    color: #C5C5C5;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+}
+
 #projects{
     width: 50%;
     /* background-color: #9A33FF; */
@@ -178,6 +370,95 @@ nav>a{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.projects-worked-on{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.personal-projects-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.section-subtitle{
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.apps-marquee-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.apps-marquee-content{
+    display: flex;
+    gap: 60px;
+    animation: apps-marquee 25s linear infinite;
+    white-space: nowrap;
+}
+
+.apps-marquee-content:hover{
+    animation-play-state: paused;
+}
+
+.worked-app-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    min-width: 120px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.worked-app-card:hover{
+    transform: translateY(-5px);
+}
+
+.worked-app-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.worked-app-card:hover img{
+    box-shadow: 0 8px 25px rgba(255, 134, 96, 0.3);
+}
+
+.worked-app-card p{
+    color: #C5C5C5;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+@keyframes apps-marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 #project-container{
@@ -329,10 +610,92 @@ nav>a{
         /* width: 100%; */
         width: 80%;
         color: #C5C5C5;
+        text-align: center;
+        line-height: 1.8;
+        font-size: 14px;
+        font-weight: lighter;
     }
 
     #skills-images{
         flex-wrap: wrap;
+    }
+
+    #experience{
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    #experience>p{
+        font-size: 30px;
+    }
+
+    #achievements{
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    #achievements>p{
+        font-size: 30px;
+    }
+
+    .achievement-content{
+        padding: 20px 20px;
+    }
+
+    .achievement-content h3{
+        font-size: 18px;
+    }
+
+    .achievement-description{
+        font-size: 13px;
+    }
+
+    .experience-card{
+        padding: 30px 30px;
+    }
+
+    .company-name{
+        font-size: 24px;
+    }
+
+    .experience-details p{
+        font-size: 16px;
+    }
+
+    .technologies-section .detail-label{
+        font-size: 16px;
+    }
+
+    .tech-badge{
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    .projects-worked-on{
+        width: 100%;
+    }
+
+    .personal-projects-section{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section-subtitle{
+        font-size: 22px;
+    }
+
+    .worked-app-card{
+        min-width: 100px;
+    }
+
+    .worked-app-card img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .apps-marquee-content{
+        gap: 40px;
     }
 
     #projects{
