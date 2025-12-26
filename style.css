@@ -352,7 +352,7 @@ nav>a{
 }
 
 #projects{
-    width: 50%;
+    width: 100%;
     /* background-color: #9A33FF; */
     padding-top: 80px;
     display: flex;
@@ -457,7 +457,7 @@ nav>a{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
