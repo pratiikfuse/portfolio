@@ -9,6 +9,14 @@
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    background-color: #050505;
+    /* Prevent white flash/overscroll strip */
+    overscroll-behavior-y: none;
+    /* Optional: disables bounce effect if desired, or keep standard */
+}
+
 #scroll-progress {
     position: fixed;
     top: 0;
