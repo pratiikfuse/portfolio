@@ -1,261 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pratik Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./faivon.png" type="image/x-icon" />
-  </head>
-  <body style="background-color: rgba(22, 21, 19, 1);">
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#contacts">Contact</a>
-    </nav>
-    <div id="main-container">
-      <section class="fade-in" id="home">
-        <img src="./images/profile.jpg" alt="" />
-        <p id="title">
-          I do Frontend<br /><span id="development">Development</span>
-        </p>
 
-        <p id="about-me" class="desktop">
-          <span id="first-line"
-            >I am a Frontend Developer with 2 years of professional experience</span
-          >
-          <span id="second-line"
-            >building scalable applications. I specialize in core technologies like</span
-          >
-          <span id="third-line"
-            >HTML5, CSS3, JavaScript, and modern frameworks including React JS and React Native.</span
-          >
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratik Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="./faivon.png" type="image/x-icon" />
+</head>
 
-        <!-- for mobile view hidden in desktop -->
-        <p class="about-me mobile">
-          I am a Frontend Developer with 2 years of professional experience building scalable applications. I specialize in core technologies like HTML5, CSS3, JavaScript, and modern frameworks including React JS and React Native.
-        </p>
+<body style="background-color: rgba(22, 21, 19, 1);">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contacts">Contact</a>
+  </nav>
+  <div id="main-container">
+    <section class="fade-in" id="home">
+      <img src="./images/profile.jpg" alt="" />
+      <p id="title">
+        I do <span id="typewriter" class="gradient-text"></span>
+      </p>
 
-        <div id="button-container">
-          <a href="https://pratiikfuse.github.io/pratikResume/" target="_blank"
-            >Education Background</a
-          >
-          <a href="./assets/pratikfuse_resume.pdf"  download="pratik_cv"
-            >Download CV</a
-          >
-        </div>
-      </section>
-      <section class="fade-in" id="skills">
-        <p>Skills</p>
-        <div id="skills-images">
-          <img src="./images/skills/html.png" alt="HTML5" />
-          <img src="./images/skills/css.png" alt="CSS3" />
-          <img src="./images/skills/javascript.png" alt="Javascript" />
-          <img src="./images/skills/reactjs.png" alt="React JS" />
-        </div>
-      </section>
-      <section class="fade-in" id="experience">
-        <p>Professional Experience</p>
-        <div class="experience-static">
-          <div class="experience-card">
-            <h3 class="company-name">Jio Platforms Limited</h3>
-            <div class="experience-details">
-              <p><span class="detail-label">Period:</span> 2 years</p>
-              <p><span class="detail-label">Designation:</span> SDE 1</p>
-              <div class="technologies-section">
-                <p class="detail-label">Technologies:</p>
-                <div class="technologies-list">
-                  <a href="https://reactnative.dev" target="_blank" class="tech-badge">React Native</a>
-                  <a href="https://developer.apple.com/swiftui/" target="_blank" class="tech-badge">SwiftUI</a>
-                  <a href="https://developer.apple.com/xcode/" target="_blank" class="tech-badge">Xcode</a>
-                  <a href="https://developer.android.com/studio" target="_blank" class="tech-badge">Android Studio</a>
-                </div>
-              </div>
-            </div>
-            <a href="https://drive.google.com/file/d/1yyBiZ1sEZhWz1_d6IifVu4d4B95QJa_a/view?usp=share_link" target="_blank" class="experience-letter-link">Experience Letter</a>
-          </div>
-        </div>
-      </section>
-      <section class="fade-in" id="achievements">
-        <p>Achievements</p>
-        <div class="achievements-container">
-          <div class="achievement-item">
-            <a href="https://drive.google.com/file/d/1PDR1oxTbCzQo2G7ePOG6urXU2DBIHaEd/view?usp=share_link" target="_blank" class="achievement-link">
-              <div class="achievement-content">
-                <h3>Star Performer At Jio</h3>
-                <p class="achievement-description">Recognition for outstanding performance at Jio Platforms Limited</p>
-              </div>
-            </a>
-          </div>
-          <div class="achievement-item">
-            <a href="https://www.hackerrank.com/profile/pratikfuse20" target="_blank" class="achievement-link">
-              <div class="achievement-content">
-                <h3>5 Star in Problem Solving</h3>
-                <p class="achievement-description">HackerRank - Verified Problem Solving Skills</p>
-              </div>
-            </a>
-          </div>
-          <div class="achievement-item">
-            <a href="https://www.hackerrank.com/certificates/1fb74a130d0f" target="_blank" class="achievement-link">
-              <div class="achievement-content">
-                <h3>Java (Basic) Certificate</h3>
-                <p class="achievement-description">HackerRank - Verified Java Skills</p>
-              </div>
-            </a>
-          </div>
-          <div class="achievement-item">
-            <a href="https://www.hackerrank.com/certificates/151894f2fb52" target="_blank" class="achievement-link">
-              <div class="achievement-content">
-                <h3>Python (Basic) Certificate</h3>
-                <p class="achievement-description">HackerRank - Verified Python Skills</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section  id="projects">
-        <p>Projects</p>
-        <div class="projects-worked-on fade-in">
-          <p class="section-subtitle">Projects I have worked on</p>
-          <div class="apps-marquee-container">
-            <div class="apps-marquee-content">
-              <a href="https://play.google.com/store/apps/details?id=jio.cloud.drive" target="_blank" class="worked-app-card">
-                <img src="./images/apps/jioaicloud.png" alt="JioAiCloud" onerror="this.src='./images/apps/jioaicloud.jpg'" />
-                <p>JioAiCloud</p>
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.jio.myjio" target="_blank" class="worked-app-card">
-                <img src="./images/apps/myjio.png" alt="MyJio" onerror="this.src='./images/apps/myjio.jpg'" />
-                <p>MyJio</p>
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.jpl.jiomart" target="_blank" class="worked-app-card">
-                <img src="./images/apps/jiomart.png" alt="JioMart" onerror="this.src='./images/apps/jiomart.jpg'" />
-                <p>JioMart</p>
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.jio.littlenestclub" target="_blank" class="worked-app-card">
-                <img src="./images/apps/littlenest.png" alt="LittleNest" onerror="this.src='./images/apps/LittleNest.png'" />
-                <p>LittleNest</p>
-              </a>
-              <div class="worked-app-card">
-                <img src="./images/apps/omni.png" alt="Omni" onerror="this.src='./images/apps/omni.jpg'" />
-                <p>Omni</p>
-              </div>
-              <!-- Duplicate for seamless loop -->
-              <a href="https://play.google.com/store/apps/details?id=jio.cloud.drive" target="_blank" class="worked-app-card">
-                <img src="./images/apps/jioaicloud.png" alt="JioAiCloud" onerror="this.src='./images/apps/jioaicloud.jpg'" />
-                <p>JioAiCloud</p>
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.jio.myjio" target="_blank" class="worked-app-card">
-                <img src="./images/apps/myjio.png" alt="MyJio" onerror="this.src='./images/apps/myjio.jpg'" />
-                <p>MyJio</p>
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.jpl.jiomart" target="_blank" class="worked-app-card">
-                <img src="./images/apps/jiomart.png" alt="JioMart" onerror="this.src='./images/apps/jiomart.jpg'" />
-                <p>JioMart</p>
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.jio.littlenestclub" target="_blank" class="worked-app-card">
-                <img src="./images/apps/littlenest.png" alt="LittleNest" onerror="this.src='./images/apps/LittleNest.png'" />
-                <p>LittleNest</p>
-              </a>
-              <div class="worked-app-card">
-                <img src="./images/apps/omni.png" alt="Omni" onerror="this.src='./images/apps/omni.jpg'" />
-                <p>Omni</p>
+      <p id="about-me" class="desktop">
+        <span id="first-line">I am a Frontend Developer with 2 years of professional experience</span>
+        <span id="second-line">building scalable applications. I specialize in core technologies like</span>
+        <span id="third-line">HTML5, CSS3, JavaScript, and modern frameworks including React JS and React Native.</span>
+      </p>
+
+      <!-- for mobile view hidden in desktop -->
+      <p class="about-me mobile">
+        I am a Frontend Developer with 2 years of professional experience building scalable applications. I specialize
+        in core technologies like HTML5, CSS3, JavaScript, and modern frameworks including React JS and React Native.
+      </p>
+
+      <div id="button-container">
+        <a href="https://pratiikfuse.github.io/pratikResume/" target="_blank">Education Background</a>
+        <a href="./assets/pratikfuse_resume.pdf" download="pratik_cv">Download CV</a>
+      </div>
+    </section>
+    <section class="fade-in" id="skills">
+      <p>Skills</p>
+      <div id="skills-images">
+        <img src="./images/skills/html.png" alt="HTML5" />
+        <img src="./images/skills/css.png" alt="CSS3" />
+        <img src="./images/skills/javascript.png" alt="Javascript" />
+        <img src="./images/skills/reactjs.png" alt="React JS" />
+      </div>
+    </section>
+    <section class="fade-in" id="experience">
+      <p>Professional Experience</p>
+      <div class="experience-static">
+        <div class="experience-card">
+          <h3 class="company-name">Jio Platforms Limited</h3>
+          <div class="experience-details">
+            <p><span class="detail-label">Period:</span> 2 years</p>
+            <p><span class="detail-label">Designation:</span> SDE 1</p>
+            <div class="technologies-section">
+              <p class="detail-label">Technologies:</p>
+              <div class="technologies-list">
+                <a href="https://reactnative.dev" target="_blank" class="tech-badge">React Native</a>
+                <a href="https://developer.apple.com/swiftui/" target="_blank" class="tech-badge">SwiftUI</a>
+                <a href="https://developer.apple.com/xcode/" target="_blank" class="tech-badge">Xcode</a>
+                <a href="https://developer.android.com/studio" target="_blank" class="tech-badge">Android Studio</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="personal-projects-section fade-in">
-          <p class="section-subtitle">Personal Projects</p>
-        </div>
-        <div id="project-container">
-          <div class="project-card fade-in">
-            <a
-              href="https://pratiikfuse.github.io/Interactive-food-delivery/"
-              target="_blank"
-              ><img src="./images/project/food_delivery.jpg" alt=""
-            /></a>
-            <a
-              href="https://github.com/pratiikfuse/Interactive-food-delivery"
-              target="_blank"
-            >
-              <p>click here to visit</p>
-              <p id="project-name">Food Delivery</p>
-              <img src="./images/project/direct.png" alt="redirect" />
-            </a>
-          </div>
-          <div class="project-card fade-in">
-            <a
-              href="https://pratiikfuse.github.io/Airbnb_complete_clone/"
-              target="_blank"
-              ><img src="./images/project/airbnb.jpg" alt=""
-            /></a>
-            <a
-              href="https://github.com/pratiikfuse/Airbnb_complete_clone"
-              target="_blank"
-            >
-              <p>click here to visit</p>
-              <p id="project-name">Airbnb Clone</p>
-              <img src="./images/project/direct.png" alt="redirect" />
-            </a>
-          </div>
-          <div class="project-card fade-in">
-            <a
-              href="https://pratiikfuse.github.io/Post_Offfice_Tracker/"
-              target="_blank"
-              ><img src="./images/project/post_office.jpg" alt=""
-            /></a>
-            <a href="https://github.com/pratiikfuse/Post_Offfice_Tracker">
-              <p>click here to visit</p>
-              <p id="project-name">Post Office Tracker</p>
-              <img src="./images/project/direct.png" alt="redirect" />
-            </a>
-          </div>
-          <div class="project-card fade-in">
-            <a href="https://pratiikfuse.github.io/Timer/" target="_blank"
-              ><img src="./images/project/timer.jpg" alt="timer"
-            /></a>
-            <a href="https://github.com/pratiikfuse/Timer" target="_blank">
-              <p>click here to visit</p>
-              <p id="project-name">Timer App</p>
-              <img src="./images/project/direct.png" alt="redirect" />
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-    <footer id="contacts">
-      <div>
-        <p class="fade-in">Contact</p>
-        <p class="fade-in">
-          To contribute significantly in highly challenging projects as well as
-          work with an inspiring team and grow in a reputed organization, where
-          I can utilize as well as develop my technical skills by getting a good
-          exposure and knowledge, which can be utilized for growth of
-          organization.
-        </p>
-        <a class="fade-in" href="mailto:pratikfuse20@gmail.com"
-          ><img
-            src="./images/contact/Email.svg"
-            alt="email logo"
-          />pratikfuse20@gmail.com</a
-        >
-        <div id="socials" class="fade-in"> 
-          <a href="https://www.instagram.com/pratik_fuse_45/" target="_blank">
-            <img src="./images/contact/instagram.svg" alt="instagram"
-          /></a>
-          <a href="https://twitter.com/pratikfuse20" target="_blank"
-            ><img src="./images/contact/X.png" alt="twitter"
-          /></a>
-          <a href="https://github.com/pratiikfuse" target="_blank"><img src="./images/contact/github.png" alt="github" /></a>
+          <a href="https://drive.google.com/file/d/1yyBiZ1sEZhWz1_d6IifVu4d4B95QJa_a/view?usp=share_link"
+            target="_blank" class="experience-letter-link">Experience Letter</a>
         </div>
       </div>
-    </footer>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal().reveal('.fade-in',{duration:1000,origin:'bottom',distanc:'0px'});
-    </script>
-  </body>
+    </section>
+    <section class="fade-in" id="achievements">
+      <p>Achievements</p>
+      <div class="achievements-container">
+        <div class="achievement-item">
+          <a href="https://drive.google.com/file/d/1PDR1oxTbCzQo2G7ePOG6urXU2DBIHaEd/view?usp=share_link"
+            target="_blank" class="achievement-link">
+            <div class="achievement-content">
+              <h3>Star Performer At Jio</h3>
+              <p class="achievement-description">Recognition for outstanding performance at Jio Platforms Limited</p>
+            </div>
+          </a>
+        </div>
+        <div class="achievement-item">
+          <a href="https://www.hackerrank.com/profile/pratikfuse20" target="_blank" class="achievement-link">
+            <div class="achievement-content">
+              <h3>5 Star in Problem Solving</h3>
+              <p class="achievement-description">HackerRank - Verified Problem Solving Skills</p>
+            </div>
+          </a>
+        </div>
+        <div class="achievement-item">
+          <a href="https://www.hackerrank.com/certificates/1fb74a130d0f" target="_blank" class="achievement-link">
+            <div class="achievement-content">
+              <h3>Java (Basic) Certificate</h3>
+              <p class="achievement-description">HackerRank - Verified Java Skills</p>
+            </div>
+          </a>
+        </div>
+        <div class="achievement-item">
+          <a href="https://www.hackerrank.com/certificates/151894f2fb52" target="_blank" class="achievement-link">
+            <div class="achievement-content">
+              <h3>Python (Basic) Certificate</h3>
+              <p class="achievement-description">HackerRank - Verified Python Skills</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p>Projects</p>
+      <div class="projects-worked-on fade-in">
+        <p class="section-subtitle">Projects I have worked on</p>
+        <div class="apps-marquee-container">
+          <div class="apps-marquee-content">
+            <a href="https://play.google.com/store/apps/details?id=jio.cloud.drive" target="_blank"
+              class="worked-app-card">
+              <img src="./images/apps/jioaicloud.png" alt="JioAiCloud"
+                onerror="this.src='./images/apps/jioaicloud.jpg'" />
+              <p>JioAiCloud</p>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.jio.myjio" target="_blank"
+              class="worked-app-card">
+              <img src="./images/apps/myjio.png" alt="MyJio" onerror="this.src='./images/apps/myjio.jpg'" />
+              <p>MyJio</p>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.jpl.jiomart" target="_blank"
+              class="worked-app-card">
+              <img src="./images/apps/jiomart.png" alt="JioMart" onerror="this.src='./images/apps/jiomart.jpg'" />
+              <p>JioMart</p>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.jio.littlenestclub" target="_blank"
+              class="worked-app-card">
+              <img src="./images/apps/littlenest.png" alt="LittleNest"
+                onerror="this.src='./images/apps/LittleNest.png'" />
+              <p>LittleNest</p>
+            </a>
+            <div class="worked-app-card">
+              <img src="./images/apps/omni.png" alt="Omni" onerror="this.src='./images/apps/omni.jpg'" />
+              <p>Omni</p>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <a href="https://play.google.com/store/apps/details?id=jio.cloud.drive" target="_blank"
+              class="worked-app-card">
+              <img src="./images/apps/jioaicloud.png" alt="JioAiCloud"
+                onerror="this.src='./images/apps/jioaicloud.jpg'" />
+              <p>JioAiCloud</p>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.jio.myjio" target="_blank"
+              class="worked-app-card">
+              <img src="./images/apps/myjio.png" alt="MyJio" onerror="this.src='./images/apps/myjio.jpg'" />
+              <p>MyJio</p>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.jpl.jiomart" target="_blank"
+              class="worked-app-card">
+              <img src="./images/apps/jiomart.png" alt="JioMart" onerror="this.src='./images/apps/jiomart.jpg'" />
+              <p>JioMart</p>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.jio.littlenestclub" target="_blank"
+              class="worked-app-card">
+              <img src="./images/apps/littlenest.png" alt="LittleNest"
+                onerror="this.src='./images/apps/LittleNest.png'" />
+              <p>LittleNest</p>
+            </a>
+            <div class="worked-app-card">
+              <img src="./images/apps/omni.png" alt="Omni" onerror="this.src='./images/apps/omni.jpg'" />
+              <p>Omni</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="personal-projects-section fade-in">
+        <p class="section-subtitle">Personal Projects</p>
+      </div>
+      <div id="project-container">
+        <div class="project-card fade-in">
+          <a href="https://pratiikfuse.github.io/Interactive-food-delivery/" target="_blank"><img
+              src="./images/project/food_delivery.jpg" alt="" /></a>
+          <a href="https://github.com/pratiikfuse/Interactive-food-delivery" target="_blank">
+            <p>click here to visit</p>
+            <p id="project-name">Food Delivery</p>
+            <img src="./images/project/direct.png" alt="redirect" />
+          </a>
+        </div>
+        <div class="project-card fade-in">
+          <a href="https://pratiikfuse.github.io/Airbnb_complete_clone/" target="_blank"><img
+              src="./images/project/airbnb.jpg" alt="" /></a>
+          <a href="https://github.com/pratiikfuse/Airbnb_complete_clone" target="_blank">
+            <p>click here to visit</p>
+            <p id="project-name">Airbnb Clone</p>
+            <img src="./images/project/direct.png" alt="redirect" />
+          </a>
+        </div>
+        <div class="project-card fade-in">
+          <a href="https://pratiikfuse.github.io/Post_Offfice_Tracker/" target="_blank"><img
+              src="./images/project/post_office.jpg" alt="" /></a>
+          <a href="https://github.com/pratiikfuse/Post_Offfice_Tracker">
+            <p>click here to visit</p>
+            <p id="project-name">Post Office Tracker</p>
+            <img src="./images/project/direct.png" alt="redirect" />
+          </a>
+        </div>
+        <div class="project-card fade-in">
+          <a href="https://pratiikfuse.github.io/Timer/" target="_blank"><img src="./images/project/timer.jpg"
+              alt="timer" /></a>
+          <a href="https://github.com/pratiikfuse/Timer" target="_blank">
+            <p>click here to visit</p>
+            <p id="project-name">Timer App</p>
+            <img src="./images/project/direct.png" alt="redirect" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer id="contacts">
+    <div>
+      <p class="fade-in">Contact</p>
+      <p class="fade-in">
+        To contribute significantly in highly challenging projects as well as
+        work with an inspiring team and grow in a reputed organization, where
+        I can utilize as well as develop my technical skills by getting a good
+        exposure and knowledge, which can be utilized for growth of
+        organization.
+      </p>
+      <a class="fade-in" href="mailto:pratikfuse20@gmail.com"><img src="./images/contact/Email.svg"
+          alt="email logo" />pratikfuse20@gmail.com</a>
+      <div id="socials" class="fade-in">
+        <a href="https://www.instagram.com/pratik_fuse_45/" target="_blank">
+          <img src="./images/contact/instagram.svg" alt="instagram" /></a>
+        <a href="https://twitter.com/pratikfuse20" target="_blank"><img src="./images/contact/X.png"
+            alt="twitter" /></a>
+        <a href="https://github.com/pratiikfuse" target="_blank"><img src="./images/contact/github.png"
+            alt="github" /></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#typewriter', {
+      strings: ['Frontend<br>Development', 'Mobile<br>Development'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.fade-in', { duration: 1000, origin: 'bottom', distanc: '0px' });
+  </script>
+</body>
+
 </html>

@@ -73,7 +73,7 @@ nav>a{
     line-height: 60px;
 }
 
-#development{
+.gradient-text{
     background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
     background-clip: text;
     -webkit-background-clip: text;
