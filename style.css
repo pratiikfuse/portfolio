@@ -18,6 +18,8 @@
     z-index: -1;
     pointer-events: none;
     /* Allow clicks to pass through */
+    background-color: #050505;
+    /* Deep black background for particles */
 }
 
 a {
@@ -26,7 +28,8 @@ a {
 
 nav {
     height: 80px;
-    background-color: transparent;
+    background-color: rgba(34, 34, 34, 0.2);
+    /* Semi-transparent original dark gray */
     display: flex;
     color: white;
     justify-content: center;
@@ -474,7 +477,7 @@ nav>a {
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
