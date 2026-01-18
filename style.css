@@ -118,6 +118,7 @@ nav>a {
 
 #button-container {
     display: flex;
+    flex: content;
     justify-content: center;
     gap: 30px;
 
@@ -174,6 +175,15 @@ nav>a {
 #skills-images>img {
     width: 40px;
     height: 40px;
+    filter: drop-shadow(0 0 12px rgba(154, 51, 255, 0.8));
+    /* Stronger permanent glow */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#skills-images>img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 15px rgba(154, 51, 255, 0.9));
+    /* Stronger glow on hover */
 }
 
 #skills-images>img:nth-child(4) {
