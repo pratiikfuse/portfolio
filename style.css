@@ -9,6 +9,62 @@
     scroll-behavior: smooth;
 }
 
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FF8660, #9A33FF);
+    width: 0%;
+    z-index: 9999;
+    background: linear-gradient(90deg, #FF8660, #9A33FF);
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+}
+
+.cursor,
+.cursor-follower {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cursor {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+}
+
+.cursor-follower {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cursor.active {
+    transform: translate(-50%, -50%) scale(0.5);
+    background-color: #FF8660;
+}
+
+.cursor-follower.active {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgba(154, 51, 255, 0.2);
+    border-color: #9A33FF;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cursor,
+    .cursor-follower {
+        display: none;
+    }
+}
+
 #three-background {
     position: fixed;
     top: 0;
@@ -42,6 +98,17 @@ nav>a {
     cursor: pointer;
     text-decoration: none;
     color: white;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav>a.active,
+nav>a:hover {
+    background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 
 #main-container {
@@ -198,6 +265,42 @@ nav>a {
     }
 }
 
+/* Preloader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF8660;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 #experience {
     width: 50%;
     padding-top: 80px;
@@ -229,6 +332,10 @@ nav>a {
     text-align: center;
     width: 100%;
     max-width: 600px;
+    overflow: hidden;
+    /* Clip the glare effect */
+    transform: translateZ(0);
+    /* Fix Safari rendering issue */
 }
 
 .company-name {
@@ -506,6 +613,12 @@ nav>a {
     display: flex;
     flex-direction: column;
     transition: 0.2s linear;
+    border-radius: 10px;
+    /* Enforce radius on container */
+    overflow: hidden;
+    /* Clip glare */
+    transform: translateZ(0);
+    /* Fix Safari rendering */
 }
 
 .project-card>a:nth-child(1)>img {
