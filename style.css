@@ -11,7 +11,7 @@
 
 html,
 body {
-    background-color: #050505;
+    /* background-color: #050505; Removed to show three.js background */
     /* Prevent white flash/overscroll strip */
     overscroll-behavior-y: none;
     /* Optional: disables bounce effect if desired, or keep standard */
