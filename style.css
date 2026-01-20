@@ -143,13 +143,27 @@ nav>a:hover {
 
 }
 
-#home>img {
+#home .profile-wrapper {
+    position: relative;
+    padding: 4px;
+    border-radius: 50%;
+    background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional glow effect */
+    box-shadow: 0 0 20px rgba(154, 51, 255, 0.3);
+}
+
+#home .profile-wrapper img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     object-position: 0px 0px;
     border-radius: 50%;
-    /* border: 4px solid purple; */
+    display: block;
+    border: 4px solid #050505;
+    /* Match background color to create spacing if needed, or remove for full flush */
     transition: 0.2s linear;
 }
 
